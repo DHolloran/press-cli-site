@@ -1,0 +1,68 @@
+// ===============================
+// Content
+// ===============================
+.content {
+    margin-bottom: 15px;
+
+    @include bp-desktop {
+        margin-bottom: 25px;
+    } // @include bp-desktop
+} // .content
+
+// ===============================
+// Links
+// ===============================
+a {
+    text-decoration: none;
+    color: $color3;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color4;
+    } // &:hover,&:active,&:focus
+} // a
+
+// ===============================
+// Blockquote
+// ===============================
+blockquote {
+    margin-left: 0;
+    padding: 10px 0 10px 15px;
+    border-left: 5px solid $color3;
+
+    @include bp-desktop {
+        padding-left: 25px;
+    } // @include bp-desktop
+
+    p {
+        margin: 0;
+    } // p
+} // blockquote
+
+// ===============================
+// Headers
+// ===============================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+} // h1,h2,h3,h4,h5,h6
+
+// ===============================
+// General Spacing
+// ===============================
+p,
+blockquote,
+pre,
+ul,
+ol {
+    margin: 0 0 15px;
+
+    @include bp-desktop {
+        margin-bottom: 25px;
+    } // @include bp-desktop
+}

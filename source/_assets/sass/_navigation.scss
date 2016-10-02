@@ -1,0 +1,19 @@
+// ===============================
+// Navigation
+// ===============================
+.site-navigation-menu {
+    @include clearfix;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+
+    & > li {
+        margin-right: 25px;
+        float: left;
+
+        &:last-child {
+            margin-right: 0;
+        } // &:last-child
+    } // & > li
+} // .site-navigation-menu

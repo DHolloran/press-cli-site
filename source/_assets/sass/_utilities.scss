@@ -1,0 +1,11 @@
+// ==================================
+// Utilities
+// ==================================
+.cl,
+.clear {
+    clear: both;
+} // .cl,.clear
+
+.clearfix {
+    @include clearfix;
+} // .clearfix

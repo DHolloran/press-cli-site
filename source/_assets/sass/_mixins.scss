@@ -1,0 +1,32 @@
+// Media Query Min Width.
+// @param $screen-size Min device width.
+@mixin bp-min($screen-size) {
+  @media (min-width: $screen-size) {
+    @content;
+  }
+}
+
+// Media Query Max Width.
+// @param $screen-size Max device width.
+@mixin bp-max($screen-size) {
+  @media (max-width: $screen-size) {
+    @content;
+  }
+}
+
+// Media Query Min/Max
+// @param $min Min device width.
+// @param $max Max device width.
+@mixin bp-min-max($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// Desktop breakpoint
+// min-width: 767px
+@mixin bp-desktop {
+    @include bp-min(767px) {
+        @content;
+    }
+}
