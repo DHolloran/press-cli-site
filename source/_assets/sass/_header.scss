@@ -3,7 +3,7 @@
 // ===============================
 .site-header {
     @include clearfix;
-    border-top: 5px solid $color3;
+    border-top: 5px solid $color5;
     padding: 10px 0 0;
     margin-bottom: 25px;
 
@@ -16,5 +16,13 @@
         font-size: 24px;
         float: left;
         display: block;
+        text-decoration: none;
+        color: $color3;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color4;
+        } // &:hover,&:active,&:focus
     } // .logo
 } // .site-header

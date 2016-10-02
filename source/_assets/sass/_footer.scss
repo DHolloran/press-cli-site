@@ -8,14 +8,15 @@
 	padding: 10px 0;
 	line-height: 1em;
 	width: 100%;
+    position: absolute;
+    bottom: 0;
 
 	.home & {
-		position: absolute;
-		bottom: 0;
 		background-color: transparent;
 	} // .home &
 
     a {
         color: $color2;
+        text-decoration: none;
     } // a
 } // .site-footer

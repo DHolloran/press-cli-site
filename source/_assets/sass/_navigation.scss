@@ -16,4 +16,12 @@
             margin-right: 0;
         } // &:last-child
     } // & > li
+
+    a {
+        text-decoration: none;
+    } // a
+
+    .active > a {
+        color: $color5;
+    } // .active > a
 } // .site-navigation-menu

@@ -4,7 +4,10 @@
     <body>
         @include('_partials.header')
         <div class="content container">
-            @yield('content')
+            <h1 class="page-header">{{ $title }}</h1>
+            <div class="content-wrap">
+                @yield('content')
+            </div>
         </div>
         @include('_partials.footer')
     </body>

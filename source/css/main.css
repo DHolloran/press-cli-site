@@ -19,7 +19,14 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   color: #49575E;
   margin: 0;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  height: 100%;
+  position: relative;
+  padding-bottom: 40px;
+  min-height: 100vh; }
+  body.home {
+    position: static;
+    padding-bottom: 0; }
 
 .btn {
   border: 2px solid #49575E;
@@ -43,7 +50,7 @@ body {
       color: #49575E; }
 
 .site-header {
-  border-top: 5px solid #49575E;
+  border-top: 5px solid #a8ce93;
   padding: 10px 0 0;
   margin-bottom: 25px; }
   .site-header::after {
@@ -57,7 +64,11 @@ body {
     font-weight: bold;
     font-size: 24px;
     float: left;
-    display: block; }
+    display: block;
+    text-decoration: none;
+    color: #49575E; }
+    .site-header .logo:hover, .site-header .logo:active, .site-header .logo:focus {
+      color: #899ba6; }
 
 .site-navigation-menu {
   padding: 0;
@@ -73,6 +84,10 @@ body {
     float: left; }
     .site-navigation-menu > li:last-child {
       margin-right: 0; }
+  .site-navigation-menu a {
+    text-decoration: none; }
+  .site-navigation-menu .active > a {
+    color: #a8ce93; }
 
 .press-bg-video {
   position: fixed;
@@ -107,16 +122,43 @@ body {
     margin: 0 10px 20px; }
 
 .content {
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
   @media (min-width: 767px) {
     .content {
-      margin-bottom: 25px; } }
+      margin-bottom: 40px; } }
+
+.content-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 65.8807826589%;
+  margin-left: 17.0596086706%; }
+  .content-wrap:last-child {
+    margin-right: 0; }
+
+.page-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+  @media (min-width: 767px) {
+    .page-header {
+      margin-bottom: 40px; } }
 
 a {
-  text-decoration: none;
-  color: #49575E; }
+  color: #899ba6;
+  transition: color 250ms ease-out; }
   a:hover, a:active, a:focus {
-    color: #899ba6; }
+    color: #49575E; }
+
+ul li,
+ol li {
+  margin-bottom: 5px; }
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 10px; }
 
 blockquote {
   margin-left: 0;
@@ -135,6 +177,13 @@ h4,
 h5,
 h6 {
   margin: 0 0 15px; }
+
+code {
+  color: #a8ce93;
+  background-color: #49575E;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid #5f727b; }
 
 p,
 blockquote,
@@ -156,12 +205,13 @@ ol {
   text-align: center;
   padding: 10px 0;
   line-height: 1em;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
   .home .site-footer {
-    position: absolute;
-    bottom: 0;
     background-color: transparent; }
   .site-footer a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

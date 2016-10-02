@@ -2,43 +2,52 @@
 // Body
 // ===============================
 body {
-	font-family: 'Ubuntu Mono', monospace;
-	color: $color3;
-	margin: 0;
-	line-height: 1.25em;
-}
+    font-family: 'Ubuntu Mono', monospace;
+    color: $color3;
+    margin: 0;
+    line-height: 1.25em;
+    height: 100%;
+    position: relative;
+    padding-bottom: 40px;
+    min-height: 100vh;
+
+    &.home {
+        position: static;
+        padding-bottom: 0;
+    } // &.home
+} // body
 
 // ===============================
 // Buttons
 // ===============================
 .btn {
-	border: 2px solid $color3;
-	padding: 10px 20px;
-	line-height: 1em;
-	white-space: nowrap;
-	color: $color3;
-	background-color: transparent;
-	text-align: center;
-	display: inline-block;
-	text-decoration: none;
-	border-radius: 20px;
-	transition: all 250ms ease-out;
+    border: 2px solid $color3;
+    padding: 10px 20px;
+    line-height: 1em;
+    white-space: nowrap;
+    color: $color3;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 250ms ease-out;
 
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: $color2;
-		color: $color3;
-	}
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color2;
+        color: $color3;
+    }
 
-	&.btn-inverse {
-		border-color: $color2;
-		color: $color2;
+    &.btn-inverse {
+        border-color: $color2;
+        color: $color2;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: $color3;
-		} // &:hover,&:focus,&:active
-	} // .btn-inverse
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color3;
+        } // &:hover,&:focus,&:active
+    } // .btn-inverse
 }
