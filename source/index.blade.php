@@ -10,7 +10,8 @@
 		<h1>Press CLI</h1>
 		<h2>Configurable WordPress Installer</h2>
 		<a href="/install/" class="btn btn-inverse video-hero-btn">$ press install</a>
-		<a href="/about/" class="btn btn-inverse video-hero-btn">$ press learn-more</a>
+		<a href="/about/" class="btn btn-inverse video-hero-btn">$ press about</a>
+        <a href="/docs/" class="btn btn-inverse video-hero-btn">$ press docs</a>
 	</div>
 </div>
 @endsection

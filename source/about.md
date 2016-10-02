@@ -8,4 +8,5 @@ Press CLI is a configurable opinionated command line installer for WordPress.
 
 ## Why would I use Press CLI?
 
-## Configuration
+
+Check out the [documentation](/docs/) to learn more about using Press CLI.

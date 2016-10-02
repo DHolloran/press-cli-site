@@ -6,5 +6,8 @@
         <li class="{{ $activeNav === 'about' ? 'active' : '' }}">
             <a href="/about/">About</a>
         </li>
+        <li class="{{ $activeNav === 'docs' ? 'active' : '' }}">
+            <a href="/docs/">Docs</a>
+        </li>
     </ul>
 </nav>
