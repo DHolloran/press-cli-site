@@ -181,9 +181,10 @@ h6 {
 code {
   color: #a8ce93;
   background-color: #49575E;
-  padding: 3px 5px;
+  padding: 0 5px;
   border-radius: 3px;
-  border: 1px solid #5f727b; }
+  border: 1px solid #5f727b;
+  display: inline-block; }
 
 p,
 blockquote,
@@ -213,5 +214,15 @@ ol {
   .site-footer a {
     color: #fff;
     text-decoration: none; }
+
+.github-buttons {
+  list-style: none;
+  padding: 0;
+  display: block;
+  margin: 0;
+  padding-top: 15px; }
+  .github-buttons li {
+    display: inline-block;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

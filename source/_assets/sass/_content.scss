@@ -91,9 +91,10 @@ h6 {
 code {
     color: $color5;
     background-color: $color3;
-    padding: 3px 5px;
+    padding: 0 5px;
     border-radius: 3px;
     border: 1px solid lighten($color3, 10%);
+    display: inline-block;
 }
 
 // ===============================
