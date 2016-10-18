@@ -2,33 +2,63 @@
 // Press Video
 // ===============================
 .press-bg-video {
-	position: fixed;
-	width: 100%;
-	height: auto;
-	left: 0;
-	top: 0;
-	background-color: $color3;
-	filter: blur(2px);
-	min-width: 100%;
-	min-height: 100%;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background-color: $color3;
+    filter: blur(2px);
+    min-width: 100%;
+    min-height: 100%;
 } // .press-bg-video
 
 .video-hero {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 0;
-	right:0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba($color3,.7);
-	color: $color2;
-	text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color3,.7);
+    color: $color2;
+    text-align: center;
 
-	.btn {
-		min-width: 120px;
-		max-width: 100%;
-		margin: 0 10px 20px;
-	} // .btn
+    .btn {
+        min-width: 120px;
+        max-width: 100%;
+        margin: 0 10px 20px;
+    } // .btn
 } // .video-hero
+
+// ==================================
+// Type Animation
+// ==================================
+.type-prefix {
+    display: inline;
+} // .type-prefix
+
+.type {
+    animation: type 1s steps(21), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    display: inline-block;
+    line-height: 12px;
+} // .type
+
+@keyframes type {
+  from {
+    width: 0;
+  } // from
+} // @keyframes type
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  } // 50%
+} // @keyframes blink
+

@@ -121,6 +121,26 @@ body {
     max-width: 100%;
     margin: 0 10px 20px; }
 
+.type-prefix {
+  display: inline; }
+
+.type {
+  animation: type 1s steps(21), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  display: inline-block;
+  line-height: 12px; }
+
+@keyframes type {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
 .content {
   margin-bottom: 25px; }
   @media (min-width: 767px) {
