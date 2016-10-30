@@ -4,7 +4,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    @if ($title)
+    @if (isset($title))
     <title>Press CLI: {{ $title }}</title>
     @else
     <title>Press CLI</title>
