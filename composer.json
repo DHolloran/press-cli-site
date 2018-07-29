@@ -1,0 +1,8 @@
+{
+    "name": "dholloran/press-cli",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "tightenco/jigsaw": "^1.2"
+    }
+}

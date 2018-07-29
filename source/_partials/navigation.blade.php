@@ -1,3 +1,6 @@
+@php
+$activeNav = $activeNav ?? '';
+@endphp
 <nav class="site-navigation">
     <ul class="site-navigation-menu">
         <li class="{{ $activeNav === 'install' ? 'active' : '' }}">
